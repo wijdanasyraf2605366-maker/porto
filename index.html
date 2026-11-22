@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wijdan Asyraf Rafi Hidayat – Portofolio Teknik Elektro</title>
+<meta name="description" content="Portofolio Wijdan Asyraf Rafi Hidayat, mahasiswa Teknik Elektro Universitas Negeri Malang.">
+<style>
+/* ===== Warna: biru ===== */
+:root{
+  --bg:#f6f8fa; --surface:#ffffff; --ink:#14202b; --muted:#566573;
+  --line:#d8dee4; --accent:#1f4fd8; --accent-ink:#ffffff;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0e141b; --surface:#151d26; --ink:#e8edf2; --muted:#97a6b4;
+        --line:#26323e; --accent:#6f9bff; --accent-ink:#0e141b;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  line-height:1.65;font-size:1rem;
+}
+.wrap{max-width:48rem;margin:0 auto;padding:0 1.25rem}
+a{color:var(--accent);overflow-wrap:anywhere}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* Navigasi */
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;padding:.7rem 0;align-items:center}
+nav .brand{font-weight:700;margin-right:auto;color:var(--ink);text-decoration:none}
+nav a{color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+
+/* Hero */
+.hero{padding:3.5rem 0 2.5rem}
+.hero h1{font-size:clamp(2rem,7vw,3.2rem);line-height:1.1;margin:0 0 .75rem;letter-spacing:-.02em}
+.hero p{font-size:1.1rem;color:var(--muted);margin:0 0 1.5rem;max-width:36rem}
+.hero-top{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;margin:0 0 1rem}
+.foto{width:7.5rem;height:7.5rem;border-radius:50%;object-fit:cover;border:3px solid var(--accent);flex:none}
+.hero-top h1{margin:0;flex:1 1 14rem}
+.wave{display:block;width:100%;height:auto;max-height:70px;margin:0 0 1.75rem;color:var(--accent)}
+.btn{display:inline-block;padding:.65rem 1.2rem;border-radius:.4rem;text-decoration:none;font-weight:600;margin:0 .5rem .5rem 0}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{border:1px solid var(--line);color:var(--ink)}
+
+/* Bagian */
+section{padding:2.25rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.4rem;margin:0 0 1rem}
+h3{font-size:1.05rem;margin:0 0 .25rem}
+.small{color:var(--muted);font-size:.92rem;margin:0}
+
+/* Keahlian */
+.skills{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.skills div{background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:1rem}
+.skills ul{margin:.4rem 0 0;padding-left:1.1rem;color:var(--muted)}
+
+/* Proyek */
+.project{padding:1rem 0;border-bottom:1px solid var(--line)}
+.project:last-child{border-bottom:0}
+.project p{margin:.3rem 0}
+.tags{color:var(--accent);font-size:.9rem;font-weight:600}
+
+/* Pendidikan */
+.edu{border-left:3px solid var(--accent);padding-left:1rem;margin:0 0 1rem}
+
+footer{padding:1.5rem 0 2.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Navigasi utama">
+      <a class="brand" href="#atas">Wijdan Asyraf</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main id="atas" class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-top">
+      <img class="foto" src="data:image/jpeg;base64,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" width="120" height="120" alt="Foto Wijdan Asyraf Rafi Hidayat">
+      <h1>Halo, saya Wijdan Asyraf Rafi Hidayat.</h1>
+    </div>
+    <p>Mahasiswa Teknik Elektro, Universitas Negeri Malang. Saya tertarik pada elektronika, sistem tertanam (embedded), dan otomasi.</p>
+
+    <!-- Gelombang sinus (SVG kecil, tanpa gambar eksternal) -->
+    <svg class="wave" viewBox="0 0 600 60" role="img" aria-label="Ilustrasi gelombang sinus" preserveAspectRatio="none">
+      <path d="M0 30 C 25 -10, 75 -10, 100 30 S 175 70, 200 30 S 275 -10, 300 30 S 375 70, 400 30 S 475 -10, 500 30 S 575 70, 600 30"
+            fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"/>
+    </svg>
+
+    <a class="btn primary" href="#proyek">Lihat proyek</a>
+    <a class="btn ghost" href="#kontak">Hubungi saya</a>
+  </div>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+    <h2>Tentang saya</h2>
+    <p>Saya mahasiswa semester 1 Program Studi S1 Teknik Elektro. Saya suka merancang rangkaian, memprogram mikrokontroler, dan menguji alat sampai benar-benar bekerja. Saat ini saya mencari kesempatan magang di bidang elektronika dan kelistrikan.</p>
+  </section>
+
+  <!-- KEAHLIAN -->
+  <section id="keahlian">
+    <h2>Keahlian</h2>
+    <div class="skills">
+      <div>
+        <h3>Elektronika</h3>
+        <ul>
+          <li>Desain &amp; analisis rangkaian analog</li>
+          <li>Merakit dan menyolder PCB</li>
+          <li>Pengukuran (multimeter, osiloskop)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Pemrograman &amp; embedded</h3>
+        <ul>
+          <li>Arduino, ESP32</li>
+          <li>C/C++, Python</li>
+          <li>MATLAB / Simulink</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Perangkat lunak</h3>
+        <ul>
+          <li>Proteus / Multisim</li>
+          <li>KiCad / EasyEDA</li>
+          <li>AutoCAD Electrical</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft skill</h3>
+        <ul>
+          <li>Kerja tim dalam proyek</li>
+          <li>Menulis laporan teknis</li>
+          <li>Pemecahan masalah</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYEK -->
+  <section id="proyek">
+    <h2>Proyek</h2>
+
+    <article class="project">
+      <h3>Sistem Monitoring Suhu Berbasis IoT</h3>
+      <p class="small">2026 · Mata kuliah / mandiri</p>
+      <p>Jelaskan dalam 2–3 kalimat: masalah yang ingin diselesaikan, apa yang Anda buat, dan hasilnya.</p>
+      <p class="tags">ESP32 · Sensor DHT22 · MQTT</p>
+    </article>
+
+    <article class="project">
+      <h3>Inverter Sederhana 12V ke 220V</h3>
+      <p class="small">2026 · Proyek kelompok</p>
+      <p>Jelaskan peran Anda dalam tim, komponen utama, dan hasil pengujian (misalnya efisiensi atau daya keluaran).</p>
+      <p class="tags">Rangkaian daya · PWM · Proteus</p>
+    </article>
+
+    <article class="project">
+      <h3>Robot Line Follower</h3>
+      <p class="small">2026 · Organisasi / lomba</p>
+      <p>Ceritakan tantangan teknisnya dan bagaimana Anda mengatasinya.</p>
+      <p class="tags">Arduino · Sensor IR · Kontrol PID</p>
+    </article>
+  </section>
+
+  <!-- PENDIDIKAN -->
+  <section id="pendidikan">
+    <h2>Pendidikan</h2>
+    <div class="edu">
+      <h3>S1 Teknik Elektro – Universitas Negeri Malang</h3>
+      <p class="small">2026 – sekarang</p>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Terbuka untuk magang, kolaborasi proyek, dan diskusi.</p>
+    <p>
+      Email: <a href="mailto:wijdan.asyraf.2605366@students.um.ac.id">wijdan.asyraf.2605366@students.um.ac.id</a><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/wijdan-asyraf-rafi-hidayat-116476417">Wijdan Asyraf Rafi Hidayat</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Wijdan Asyraf Rafi Hidayat · Teknik Elektro, Universitas Negeri Malang</div>
+</footer>
+
+</body>
+</html>
